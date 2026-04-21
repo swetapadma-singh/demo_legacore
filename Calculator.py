@@ -18,4 +18,4 @@ elif operation == 4:
         print("The quotient of the two numbers is: ", firstNum / secondNum)
 else:
     print("Invalid operation choice.")
-    
+print("Thank you for using the calculator!")    
