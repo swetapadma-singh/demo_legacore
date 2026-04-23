@@ -112,3 +112,26 @@ import sys
 # print(a) # [[1, 99], [2]]
 # print(b) # [[1, 99], [2]]
 # print(c) # [[1, 99], [2]]
+
+# x = 10
+# def f():
+#     x = 20
+#     def g():
+#         global x
+#         x += 3
+#     g()
+# f()
+# print(x) # 13
+
+# funcs = []
+# for i in range(3):
+#     funcs.append(lambda: i)
+#     print("i = ",i) # 0, 1, 2
+#     print("funcs = ",funcs)
+# print("funcs outside loop = ",funcs) # [<function <lambda> at 0x0000022BF83D3B60>, <function <lambda> at 0x0000022BF8443690>, <function <lambda> at 0x0000022BF8443740>]
+# for f in funcs:
+#     print("f = ",f)
+#     print("f() = ",f()) # 2, 2, 2
+# print(type(funcs)) # <class 'list'>
+# print(funcs[0])  # <function <lambda> at 0x0000022BF83D3B60>  
+# print(type(funcs[0])) # <class 'function'>
